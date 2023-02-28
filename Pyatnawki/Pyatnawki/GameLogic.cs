@@ -70,7 +70,7 @@ namespace Pyatnawki
                     return clics;
                 }
             }
-            if (x == maxX && y != maxY)
+            else if (x == maxX && y != maxY)
             {
                 if (pole[x, y + 1] == 0)
                 {
@@ -95,7 +95,7 @@ namespace Pyatnawki
 
                 }
             }
-            if (x != maxX && y == maxY)
+            else if (x != maxX && y == maxY)
             {
                 if (pole[x, Math.Abs(y - 1)] == 0)
                 {
@@ -120,7 +120,7 @@ namespace Pyatnawki
                 }
 
             }
-            if (x == maxX && y == maxY)
+            else
             {
                 if (pole[x, Math.Abs(y - 1)] == 0)
                 {
